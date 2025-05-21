@@ -8,6 +8,16 @@
     --secondary-button-color: turquoise;
 }
 
+.darkmode {
+    --base-color: #070b1d;
+    --base-variant: #546cd4;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --acent-color: #0071ff;
+    --secondary-button-color: rgb(177, 18, 221);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -45,4 +55,30 @@
 
   .premimum-button{
     background-color: var(--acent-color);
+  }
+
+  #theme-switch {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: var(--base-variant);
+  }
+
+  #theme-switch svg:last-child{
+    display: none;
+  }
+
+  .darkmode #theme-switch svg:first-child{
+    display: none;
+  }
+
+  .darkmode #theme-switch svg:last-child{
+    display: block;
   }
